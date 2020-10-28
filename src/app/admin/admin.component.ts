@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  public nome: string = "Felipe"
+  public nomeClasse: string = "classe-teste"
+
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
+    
+  }
+  
+  mudaNome() {
+    this.nome = "Ricardo asdasdadas"
   }
 
 }

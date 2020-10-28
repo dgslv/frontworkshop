@@ -1,6 +1,12 @@
-<h1>Titulo</h1>
-<h2>Titulo 2</h2>
-<h3>Titulo 2</h3>
-<h4>Titulo 2</h4>
+<main class="main">
 
-<p>home works!</p>
+    <div class="product-box" *ngFor="let product of products">
+        <div class="product-box__img-box">
+            <img class="product-box__img-box__img" [src]="product.picture" alt="">
+        </div>
+        <div class="product-box__title"> {{ product.title }} </div>
+        <div class="product-box__description" style="margin-top: 6px;">{{ product.description }}</div>
+        <div class="product-box__price" style="margin-top: 6px;">{{ product.price }}</div>
+    </div>
+
+</main>
