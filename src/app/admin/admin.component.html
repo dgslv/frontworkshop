@@ -1,10 +1,17 @@
-<div class="teste">
+<div>
 
-    <p>admin works!</p>
+    <label for="fname">Título</label>
+    <input type="text" name="title" placeholder="Título" [(ngModel)]="product.title">
 
-    <p [class]="nomeClasse">Meu nome é {{ nome }}</p>
+    <label for="lname">Descrição</label>
+    <input type="text" name="desc" placeholder="Descrição" [(ngModel)]="product.description">
 
+    <label for="lname">Imagem</label>
+    <input type="text" name="img" placeholder="Imagem" [(ngModel)]="product.picture">
 
-    <button (click)="mudaNome()">Botão</button>
+    <label class="classe1" for="lname">Preço</label>
+    <input type="text" name="price" placeholder="Preço" [(ngModel)]="product.price">
+
+    <button (click)="createProduct()">Cadastrar</button>
 
 </div>
